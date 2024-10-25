@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tweet_sentiment.css') }}">
+</head>
+
+<body>
+    <h1>Tweet Sentiment Analysis</h1>
+    <input type="text" , id="text_Input" , accept="text" , placeholder="Input_Text" />
+
+    <button onclick='classifyText()'>Classify Text</button>
+
+    <p id="prediction"></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script src="{{ url_for('static', filename='js/tweet_sentiment.js') }}"></script>
+</body>
+
+</html>

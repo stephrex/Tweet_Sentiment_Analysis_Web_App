@@ -2,8 +2,10 @@ from flask import Flask, render_template, request, jsonify
 from utils import tokenizer, tweet_sentiment_model, classes
 from flask_cors import CORS
 import numpy as np
-import tensorflow as tf
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+import tf_keras as tf
+from tf_keras.preprocessing.sequence import pad_sequences
+# import tensorflow as tf
+# from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 app = Flask(__name__)
 CORS(app)

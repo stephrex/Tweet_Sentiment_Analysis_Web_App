@@ -6,7 +6,7 @@ import numpy as np
 # os.system('pip install tensorflow==2.17.0')
 # import tensorflow as tf
 import tf_keras as tf
-from tf_keras.keras.preprocessing.sequence import pad_sequences
+from tf_keras.preprocessing.sequence import pad_sequences
 
 app = Flask(__name__)
 CORS(app)

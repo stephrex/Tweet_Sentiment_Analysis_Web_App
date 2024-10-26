@@ -5,9 +5,9 @@ import numpy as np
 import os
 os.system('pip install tensorflow==2.17.0')
 import tensorflow as tf
-#import tf_keras as tf
-from tf.keras.preprocessing.sequence import pad_sequences
-# import tensorflow as tf
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+os.system('pip install tf_keras==2.17.0')
+import tf_keras as keras
 # from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 app = Flask(__name__)

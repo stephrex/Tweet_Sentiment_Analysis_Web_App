@@ -1,4 +1,3 @@
 numpy
-Tensorflow
 flask
 tf_keras

@@ -3,12 +3,12 @@ from utils import tokenizer, tweet_sentiment_model, classes
 from flask_cors import CORS
 import numpy as np
 import os
-os.system('pip install tensorflow==2.17.0')
-import tensorflow as tf
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-os.system('pip install tf_keras==2.17.0')
-import tf_keras as keras
+# os.system('pip install tensorflow==2.17.0')
+# import tensorflow as tf
 # from tensorflow.keras.preprocessing.sequence import pad_sequences
+os.system('pip install tf_keras==2.17.0')
+import tf_keras as tf
+from tf_keras.preprocessing.sequence import pad_sequences
 
 app = Flask(__name__)
 CORS(app)
